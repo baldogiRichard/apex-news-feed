@@ -3,7 +3,7 @@
     "version" : "1.0",
     "description" : "This is an Oracle APEX Template Component Plug-in which can display data in a NewsFeed format.",
     "keywords" : ["templatecomponent","plugin"],
-    "homepage" : "https://github.com/baldogiRichard/news-feed",
+    "homepage" : "https://github.com/baldogiRichard/apex-news-feed",
     "bugs" : {
       "url" : "https://github.com/baldogiRichard/apex-news-feed/issues",
       "email" : "baldogi.richard@gmail.com"
