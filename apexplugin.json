@@ -28,7 +28,7 @@
           "internalName" : "COM.NEWSFEED.TEMPLATECOMPONENT",
           "type" : "template component",
           "demo" : "https://apex.oracle.com/pls/apex/r/rmzrt/apex-plugins-by-richard-baldogi/news-feed",
-          "previewImage" : "https://raw.githubusercontent.com/baldogiRichard/news-feed/main/newsfeed.jpg"
+          "previewImage" : "https://raw.githubusercontent.com/baldogiRichard/news-feed/main/newsfeed.gif"
         }
       }
     }
