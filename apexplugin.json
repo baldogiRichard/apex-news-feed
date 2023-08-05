@@ -21,7 +21,7 @@
       "url" : "https://github.com/baldogiRichard/apex-news-feed.git"
     },
    "oracle" : {
-      "versions" : ["18.0.0.0","19.0.0.0","21.0.0.0"],
+      "versions" : ["19.0.0.0","21.0.0.0","23.0.0.0"],
       "apex" : {
         "versions" : ["23.1"],
         "plugin" : {
