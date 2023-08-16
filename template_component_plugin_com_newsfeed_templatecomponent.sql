@@ -33,7 +33,7 @@ prompt APPLICATION 96333 - APEX Plug-ins by Richard Baldogi
 -- Application Export:
 --   Application:     96333
 --   Name:            APEX Plug-ins by Richard Baldogi
---   Date and Time:   14:01 Friday August 4, 2023
+--   Date and Time:   14:20 Wednesday August 16, 2023
 --   Exported By:     BALDOGI.RICHARD
 --   Flashback:       0
 --   Export Type:     Component Export
@@ -98,7 +98,7 @@ wwv_flow_imp_shared.create_plugin(
 '            </div>',
 '            <div class="post-body">',
 '                <div>',
-'                    {if IMAGE_URL/}<img src="#IMAGE_URL#" class="pbtthumbimg">{endif/}',
+'                    <img src="{if IMAGE_URL/}#IMAGE_URL#{else/}#NO_IMAGE_AVAILABLE_URL#{endif/}" class="pbtthumbimg">',
 '                    <div class="news-feed-description">#DESCRIPTION#</div>',
 '                    {if APEX$HAS_ACTION_BUTTONS/}',
 '                        {if READ_MORE/}<div class="read-more">#READ_MORE#</div>{endif/}',
@@ -128,6 +128,12 @@ wwv_flow_imp_shared.create_plugin(
 ,p_version_identifier=>'1.0'
 ,p_about_url=>'https://github.com/baldogiRichard/apex-news-feed'
 ,p_files_version=>77
+);
+wwv_flow_imp_shared.create_plugin_attr_group(
+ p_id=>wwv_flow_imp.id(51835574192456183949)
+,p_plugin_id=>wwv_flow_imp.id(133815810584791600271)
+,p_title=>'Other'
+,p_display_sequence=>30
 );
 wwv_flow_imp_shared.create_plugin_attr_group(
  p_id=>wwv_flow_imp.id(140237288805172621741)
@@ -245,6 +251,20 @@ wwv_flow_imp_shared.create_plugin_attribute(
 ,p_column_data_types=>'VARCHAR2'
 ,p_is_translatable=>false
 ,p_attribute_group_id=>wwv_flow_imp.id(140237288805172621741)
+);
+wwv_flow_imp_shared.create_plugin_attribute(
+ p_id=>wwv_flow_imp.id(51840698352145226399)
+,p_plugin_id=>wwv_flow_imp.id(133815810584791600271)
+,p_attribute_scope=>'COMPONENT'
+,p_attribute_sequence=>14
+,p_display_sequence=>140
+,p_static_id=>'NO_IMAGE_AVAILABLE_URL'
+,p_prompt=>'No Image Available URL'
+,p_attribute_type=>'TEXT'
+,p_is_required=>false
+,p_escape_mode=>'HTML'
+,p_is_translatable=>false
+,p_attribute_group_id=>wwv_flow_imp.id(51835574192456183949)
 );
 wwv_flow_imp_shared.create_plugin_act_template(
  p_id=>wwv_flow_imp.id(139909732665158198523)
